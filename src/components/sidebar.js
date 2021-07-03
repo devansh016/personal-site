@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import '../styles/main.css'
+import {sidebar} from './main.module.css'
 
 const Sidebar = () => {
     return (
-        <div class="sidebar">
+        <div className = { sidebar}>
             <Link to="/">Home</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/about">About</Link>
