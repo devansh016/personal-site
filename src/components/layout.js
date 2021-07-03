@@ -6,6 +6,8 @@ import Sidebar from './sidebar'
 import {container} from './layout.module.css'
 import {content} from './layout.module.css'
 
+import '../styles/main.css'
+
 const Layout = (props) => {
     return (
         <div className = { container }>
