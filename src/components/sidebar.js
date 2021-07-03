@@ -8,6 +8,7 @@ const Sidebar = () => {
         <div className = { sidebar}>
             <Link to="/">Home</Link>
             <Link to="/blog">Blog</Link>
+            <Link to="/about">About me</Link>
         </div>
     )
 }
