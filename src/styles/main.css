@@ -1,3 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
 * {
-    font-family: Lato,-apple-system,BlinkMacSystemFont,Avenir,Avenir Next,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: Lato,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.sidebar {
+    visibility: visible;
+    position: fixed;
+    top: 100px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 5px solid #e6e6fa;
+    padding-left: 10px;
+    font-size: Large;
+    text-decoration: none;
+    color: #000;
+}
+
+.horizontal-links {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.horizontal-social-links {
+    padding-right: 8px;
+}
+
+@media (max-width: 1192px){
+    .sidebar {
+        visibility: hidden;
+    } 
 }
