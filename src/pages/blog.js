@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
-import { graphql, useStaticQuery} from 'gatsby'
+import { Link, graphql, useStaticQuery} from 'gatsby'
+import { BlogList } from '../components/main.module.css'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -11,9 +11,10 @@ const BlogPage = () => {
                 node {
                     frontmatter{
                         title
-                        date
+                        date (formatString: "MMMM DD, YYYY")
                         path
                     }
+                    timeToRead
                 }
             }
         }
@@ -22,17 +23,19 @@ const BlogPage = () => {
 
     return (
         <Layout>
+        <div className= { BlogList }>
             <h1>Blog</h1>
             <ol>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li> 
                              <Link to={edge.node.frontmatter.path}> <h2>{edge.node.frontmatter.title} </h2> </Link>
-                            <p>{edge.node.frontmatter.date} </p>
+                            <p>{edge.node.frontmatter.date} <span> • </span> {edge.node.timeToRead} min </p> 
                         </li>
                     )
                 })}
             </ol>
+        </div>
         </Layout>
     )
 }

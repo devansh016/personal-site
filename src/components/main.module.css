@@ -55,3 +55,13 @@
 .TitleHeader{
     font-size: 1.8rem;
 }
+
+.BlogList{
+    font-size: 1rem;
+}
+.BlogList h2, .BlogList a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-bottom: 3px;
+}
