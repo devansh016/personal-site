@@ -5,6 +5,7 @@ description: "Artificial intelligence (AI) refers to the simulation of human int
 tags:
   - Artificial Intelligence
 banner: ./artificial-intelligence.jpeg
+path: '/future-of-artifical-intelligence'
 ---
 
 Artificial Intelligence is in more places than ever before. This is a pretty bold statement, but lots of governments are taking it seriously and planning to grow education, research, and development in AI. China’s plan alone calls for over 100 billion U.S. dollars in funding over the next 10 years.

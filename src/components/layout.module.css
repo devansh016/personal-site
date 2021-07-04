@@ -10,5 +10,19 @@
 
 .content {
     flex-grow: 1;
-    font-size: larger;
+    font-size: 1.3rem;
+}
+.content p{
+    opacity: 0.7;
+    font-weight: lighter; 
+}
+
+.content h2,.content h3, .content h4, .content h5, .content h6{
+   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+      padding: 10px;
+    }
 }
