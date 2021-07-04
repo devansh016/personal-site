@@ -3,7 +3,7 @@ title: "Future of Artificial Intelligence"
 date: "2021-07-03"
 description: "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. Let's find out where it is headed to and what is it's end goal."
 tags:
-  - Artificial Intelligence
+  - Technology
 banner: ./artificial-intelligence.jpeg
 path: '/future-of-artifical-intelligence'
 ---
