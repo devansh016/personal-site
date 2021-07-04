@@ -5,7 +5,6 @@ const AboutPage = () => {
     return (
         <Layout>
             <h1>About Me</h1>
-            <h2>Hi. You will soon know about me.</h2>
             <p>I'm Devansh - currently majoring "Computer Science and Engineering" at Jaypee University of Information Technology, Solan.</p>
             <p>I am a young and energetic professional, looking for challenging opportunities to grow my skills.</p>
             <p>My intellectual curiosity also drives me to be a lifelong learner, and so I'm seeking to connect with like-minded people to learn and grow more. And in the way won't mind working under someone to know how everything works. And as far as my specialties?</p>

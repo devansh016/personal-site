@@ -16,7 +16,10 @@
     opacity: 0.7;
     font-weight: lighter; 
 }
-
+.content img{
+    opacity: 1.0;
+    font-weight: normal; 
+}
 .content h2,.content h3, .content h4, .content h5, .content h6{
    margin-top: 3rem;
 }
