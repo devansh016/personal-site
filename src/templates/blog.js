@@ -9,7 +9,7 @@ export default function Template({ data }) {
   return (
       <Layout>
           <div className="blog-post-container">
-      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+      <Helmet title={`Devansh | ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         {post.frontmatter.tags.map((tag) => {
