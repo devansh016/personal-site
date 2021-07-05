@@ -2,8 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-
-// import '../css/blog-post.css';
+import { blogtag } from "../components/main.module.css"
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -13,6 +12,11 @@ export default function Template({ data }) {
       <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
+        {post.frontmatter.tags.map((tag) => {
+                    return (
+                      <div className= { blogtag} > {tag}</div>
+                    )
+                })}
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -31,6 +35,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        tags
       }
     }
   }
