@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { AboutPageContainer } from "../components/main.module.css"
 
 const AboutPage = () => {
     return (
         <Layout>
+        <div className = {AboutPageContainer}>
             <h1>About Me</h1>
             <p>I'm Devansh - currently majoring "Computer Science and Engineering" at Jaypee University of Information Technology, Solan.</p>
             <p>I am a young and energetic professional, looking for challenging opportunities to grow my skills.</p>
@@ -17,6 +19,7 @@ const AboutPage = () => {
             </ul>
             <p>I enjoy traveling and eating my way around the world, staying fit, and talking about brain or hacking, so if you ever want to bounce ideas off of me, please feel free to contact me.</p>
             <p>Connect to know more :)</p>
+        </div>
         </Layout>
     )
 }

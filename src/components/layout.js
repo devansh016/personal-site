@@ -3,8 +3,7 @@ import Footer from './footer'
 import Header from './header'
 import Sidebar from './sidebar'
 
-import {container} from './layout.module.css'
-import {content} from './layout.module.css'
+import {container} from './main.module.css'
 
 import '../styles/main.css'
 
@@ -13,7 +12,7 @@ const Layout = (props) => {
         <div className = { container }>
             <Sidebar />
             <Header />
-            <div className = { content }>
+            <div>
                 {props.children}
             </div>   
             <Footer />

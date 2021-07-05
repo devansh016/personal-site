@@ -1,3 +1,21 @@
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+      padding: 10px;
+    }
+}
+
 .sidebar {
     visibility: visible;
     position: fixed;
@@ -58,12 +76,21 @@
 
 .BlogList{
     font-size: 1rem;
+    padding: 0 0 0 0 ;
 }
-.BlogList h2, .BlogList a{
-    font-size: 1.3rem;
+.BlogList h2, .BlogList a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding-bottom: 3px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.BlogList p{
+    margin: 6px;
+}
+.BlogListAddInfo{
+    font-size: 1rem;
 }
 
 .blogtag {
@@ -76,4 +103,62 @@
     border-radius: 1.0rem;
     background-color: #e6e6fa;
     color: rgba(0,0,0,.84);
+    margin-bottom: 1.6rem;
+}
+
+.blogpostcontainer{
+    flex-grow: 1;
+    font-size: 1.4rem;
+    font-weight: lighter; 
+    line-height: 1.9rem;
+}
+
+.blogpostcontainer p{
+    opacity: 0.8;
+}
+.blogpostcontainer h2,.blogpostcontainer h3, .blogpostcontainer h4{
+    margin-top: 1rem;
+ } 
+ .blogpostcontainer h5{
+    opacity: 0.7;
+    margin: 5px;
+ }
+ .blogpostcontainer img{
+    opacity: 1.0;
+}
+
+.AboutPageContainer{
+    flex-grow: 1;
+    font-size: 1.4rem;
+    font-weight: lighter; 
+    line-height: 1.9rem;
+}
+.IndexPageContainer{
+    flex-grow: 1;
+    font-size: 1.4rem;
+    font-weight: lighter; 
+    line-height: 1.9rem;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    margin-right: 180px;
+}
+
+.SideProjectList{ 
+    font-size: 1rem;
+}
+
+.SideProjectList h2 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+} 
+
+.SideProjectList a, .SideProjectList p {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
