@@ -10,7 +10,7 @@ export default function Template({ data }) {
       <Layout>
           <div className={blogpostcontainer}>
               <Helmet title={`Devansh | ${post.frontmatter.title}`} />
-              <div className="blog-post">
+              <div>
                     <h1>{post.frontmatter.title}</h1>
                     <h5>{post.frontmatter.date} <span> • </span> {post.timeToRead} min </h5>
                       {post.frontmatter.tags.map((tag) => {
@@ -18,7 +18,7 @@ export default function Template({ data }) {
                                 <div key = { tag } className= { blogtag} > {tag}</div>
                         )
                       })}
-            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
            </div>
       </Layout>

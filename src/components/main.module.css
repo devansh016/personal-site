@@ -109,13 +109,9 @@
 .blogpostcontainer{
     flex-grow: 1;
     font-size: 1.4rem;
-    font-weight: lighter; 
     line-height: 1.9rem;
 }
 
-.blogpostcontainer p{
-    opacity: 0.8;
-}
 .blogpostcontainer h2,.blogpostcontainer h3, .blogpostcontainer h4{
     margin-top: 1rem;
  } 
@@ -123,20 +119,15 @@
     opacity: 0.7;
     margin: 5px;
  }
- .blogpostcontainer img{
-    opacity: 1.0;
-}
 
 .AboutPageContainer{
     flex-grow: 1;
     font-size: 1.4rem;
-    font-weight: lighter; 
     line-height: 1.9rem;
 }
 .IndexPageContainer{
     flex-grow: 1;
-    font-size: 1.4rem;
-    font-weight: lighter; 
+    font-size: 1.3rem;
     line-height: 1.9rem;
     color: rgba(0,0,0,.84);
     text-rendering: optimizeLegibility;

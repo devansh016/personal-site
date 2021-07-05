@@ -32,7 +32,7 @@ return (
                         <li key = { edge.node.frontmatter.path }> 
                             <Link to={edge.node.frontmatter.path}> <h2>{edge.node.frontmatter.title} </h2>
                             <div className={ BlogListAddInfo }><p>{edge.node.frontmatter.date} <span> • </span> {edge.node.timeToRead} min </p> </div>
-                                {/* Createing tags */}
+                            
                                 {edge.node.frontmatter.tags.map((tag) => {
                                     return (
                                         <div key = { tag}  className={blogtag}> {tag} </div>
