@@ -13,5 +13,5 @@ Minimal News is a text only news aggregator inspired by National Public Radio ne
 
 3. Minimal: No images, comments, or any other distractions.
 
-<a href="https://github.com/devansh016/Minimal-News" target="_top">Github Link</a>
+<a href="https://github.com/devansh016/Minimal-News" target="_top">Github Link</a> | 
 <a href="https://minimal-news.herokuapp.com" target="_top"> Web Link</a>

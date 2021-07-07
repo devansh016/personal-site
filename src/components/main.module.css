@@ -10,6 +10,10 @@
     text-rendering: optimizeLegibility;
 }
 
+.footer{
+    margin-top: 3rem;
+}
+
 @media only screen and (max-width: 400px) {
     .container {
       padding: 15px;
@@ -101,14 +105,15 @@
     height: 1.8rem;
     margin-right: .4rem;
     border-radius: 1.0rem;
-    background-color: #e6e6fa;
-    color: rgba(0,0,0,.84);
+    /* background-color: #e6e6fa; */
+    border: 2px solid #c1c1db;
+    color: #8e8ebd;
     margin-bottom: 1.6rem;
 }
 
 .blogpostcontainer{
     flex-grow: 1;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.9rem;
 }
 
@@ -129,7 +134,7 @@
 
 .AboutPageContainer{
     flex-grow: 1;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.9rem;
 }
 .IndexPageContainer{
@@ -142,6 +147,7 @@
 
 .SideProjectList{ 
     font-size: 1rem;
+    margin: 6px;
 }
 
 .SideProjectList h2 {
