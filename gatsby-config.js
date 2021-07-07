@@ -8,10 +8,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: 'Devansh Chaudhary',
-    author: 'Devansh Chaudhary'
+    author: 'Devansh Chaudhary',
+    siteUrl: 'https://devanshchaudhary.me'
   },
   plugins: [
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
