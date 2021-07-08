@@ -10,6 +10,36 @@
     text-rendering: optimizeLegibility;
 }
 
+.menu {
+    z-index: 1;
+    background-color: #fff;
+    left: auto;
+    top: 70px;
+    right: 20px;
+    border: 1px solid #e6e6fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    visibility: hidden;
+}
+.menu a{
+    text-decoration: none;
+    color: #666;
+    transition: transform 0.2s ease-in;
+    padding-bottom: 4px;
+}
+
+@media only screen and (max-width: 400px) {
+    .menu {
+      visibility: visible;
+    }
+}
+
+.menu:checked{
+    visibility: visible;
+}
+
 .footer{
     margin-top: 3rem;
 }
