@@ -17,7 +17,7 @@ const AboutPage = () => {
                 <li>Research </li>
                 <li>Web Development</li>
             </ul>
-            <p>I enjoy traveling and eating my way around the world, staying fit, and talking about brain or hacking, so if you ever want to bounce ideas off of me, please feel free to contact me.</p>
+            <p>I enjoy traveling and eating my way around the world, staying fit, and talking about outerspace and quantum computing, so if you ever want to bounce ideas off of me, please feel free to contact me.</p>
             <p>Connect to know more :)</p>
         </div>
         </Layout>
