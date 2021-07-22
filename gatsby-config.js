@@ -22,6 +22,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-8986167427812548`
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         // Footnotes mode (default: true)
