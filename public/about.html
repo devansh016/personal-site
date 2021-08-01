@@ -1,0 +1,138 @@
+<!-- About -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>About · Devansh Chaudhary</title>
+    <meta name="Description" content="Devansh Chaudhary is a web developer and student at JUIT. ">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Devansh Chaudhary logo" src="images/dc.png" class="zk-logo"></a>
+                <h3 class="medium content-web">Devansh Chaudhary</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Home</a></h5>
+                    <h5 class="option selected">About</h5>
+                    <h5 class="option"><a href="projects.html">Projects</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">👋🏽</h1>
+                <div>
+                    <h1 class="content-mobile">👋🏽</h1>
+                    <h1>Hey there,</h1>
+                    <h1 class="medium">It's nice to meet you.</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c12 summary main">
+        <div>
+            <p>
+                I’m currently a student at <a href="https://www.juit.ac.in/" target="_blank" rel="noopener" class="link juit-link">Jaypee University of Information Technology</a> studying Computer Science. Most recently, I was a Cyber Security Summer Intern at <a href="https://gurgaon.haryanapolice.gov.in/" target="_blank" rel="noopener" style="color: #0366D6" class="link">Gurugram Police</a>.
+            </p><br>
+            <p>
+                I learned my skills by working on <a href="https://github.com/devansh016" target="_blank" rel="noopener" class="link">side projects</a> and guidance from some great mentors</a>. I also work with <a href="https://juit.acm.org/" target="_blank" rel="noopener" style="color: #8903d6"  class="link">ACM JUIT</a> to improve the quality of life for students on campus.
+            </p><br>
+            <p>
+                A proud Indian and sweet coffee lover, I'm inspired by people from different walks of life and my own experiences exploring the unknown.
+            </p>
+        </div>
+        <img alt="picture of Devansh Chaudhary" src="images/devansh-chaudhary.jpg" class="avi">
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:devansh2080@gmail.com?subject=Hey!" target="_blank" rel="noopener">devansh2080@gmail.com</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/devansh016" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
+            <a href="https://github.com/devansh016" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/devansh-chaudhary" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>

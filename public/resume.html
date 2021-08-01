@@ -1,0 +1,219 @@
+<!-- Resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Resume · Devansh Chaudhary</title>
+    <meta name="Description" content="Devansh Chaudhary is a web developer and student at JUIT. ">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Devansh Chaudhary logo" src="images/dc.png" class="zk-logo"></a>
+                <h3 class="medium content-web">Devansh Chaudhary</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">Home</a></h5>
+                    <h5 class="option"><a href="about.html">About</a></h5>
+                    <h5 class="option"><a href="projects.html">Projects</a></h5>
+                    <h5 class="option selected">Resume</h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">💼</h1>
+                <div>
+                    <h1 class="content-mobile">💼</h1>
+                    <h1>Resume.<br>
+                    <span class="medium">Or download it <a href="devansh-resume.pdf" aria-label="Devansh Chaudhary resume" target="_blank" rel="noopener" class="link" style="border-bottom: 0.075em solid var(--black)">here</a> if you like.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c6 main">
+
+        <div class="section">
+            <h5 class="subtitle">Education</h5>
+            <h3><a href="https://www.juit.ac.in/" target="_blank" rel="noopener" class="link juit-link">Jaypee University of Information Technology</a></h3>
+            <p class="medium">B.tech. Computer Science · July 2024</p>
+            <br>
+            <p>Concentration in Software Engineering</p>
+            <p>CGPA 9.2</p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Experience</h5>
+            <h3><a href="https://gurgaon.haryanapolice.gov.in/" target="_blank" rel="noopener" class="link github-link">Gurugram Police</a></h3>
+            <p class="medium">Cyber Security Summer Intern · June 2021 to July 2021</p>
+            <br>
+            <p> 
+                Researched about India’s new IT Laws, hacking techniques used by hackers, cryptocurrency, effects of social media on brain, dark web, call snooping and cybercrimes.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3><a href="https://fiverr.com" target="_blank" rel="noopener" class="link juit-link">Fiverr.com</a></h3>
+            <p class="medium">Freelance Web Developer · Feb 2021 to Present</p>
+            <br>
+            <p> 
+                Developed websites for corporates and small businesses improving their online presence. Optimized many websites reducing their load time drastically. Setup cloud hosting for clients webapps in AWS.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h5 class="subtitle">Organizations</h5>
+            <h3><a href="https://juit.acm.org/" target="_blank" rel="noopener" class="link" style="color: #CB422A">Web Development Team Member</a></h3>
+            <p class="medium">ACM JUIT · Mar 2021 to Present</p>
+            <br>
+            <p> 
+                Worked on backend web development using MERN stack. Explored cyber security and machine learning.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3><a href="https://www.akfusa.org/" target="_blank" rel="noopener" class="link" style="color: #1C7C54">Open-Source Contributor</a></h3>
+            <p class="medium">Google Code-in, Wikimedia · Dec 2019 to Jan 2020</p>
+            <br>
+            <p> 
+                Worked on Wikimedia improving their documentations for new contributors. Translated their common app for Hindi language and created video guidelines for uploading images.
+            </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Achievements</h5>
+            <h3>XYZ</h3>
+            <p class="medium">Jan 2021</p>
+            <br>
+            <p> 
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit suscipit iusto placeat ducimus eveniet exercitationem dolorum neque dolores totam distinctio excepturi ea pariatur harum vero, voluptatum officiis consectetur ipsa.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>XYZ</h3>
+            <p class="medium">April 2021</p>
+            <br>
+            <p> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit suscipit iusto placeat ducimus eveniet exercitationem dolorum neque dolores totam distinctio excepturi ea pariatur harum vero, voluptatum officiis consectetur ipsa.
+            </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Skills</h5>
+            <h3>Web Development</h3>
+            <br>
+            <p>Gatsby, GraphQL, NodeJS, HTML5, </p>
+        </div>
+
+        <div class="section">
+            <h3>Others</h3>
+            <br>
+            <p>MySQL, Git, MVC, AWS, MongoDB, WordPress</p>
+        </div>
+
+        <div class="section">
+            <h3>Languages</h3>
+            <br>
+            <p>HTML/CSS, C/C++ , Javascript, Java</p>
+        </div>
+
+        <div class="section">
+            <h3>Interests</h3>
+            <br>
+            <p>Swimming, Chess, Reading</p>
+        </div>
+
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to grab some coffee, feel free to email me at <a href="mailto:devansh2080@gmail.com?subject=Hey!" target="_blank" rel="noopener">devansh2080@gmail.com</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://twitter.com/devansh016" target="_blank" rel="noopener"><img alt="Twitter icon" src="icons/twitter.svg" class="icons"></a>
+            <a href="https://github.com/devansh016" target="_blank" rel="noopener"><img alt="Github icon" src="icons/github.svg" class="icons"></a>
+            <a href="https://linkedin.com/in/devansh-chaudhary" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+        
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+    
+</body>
+
+</html>
