@@ -579,6 +579,11 @@ footer p a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
 }
+.project-formclip {
+    background: url(../images/projects/formclip.png) center / cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+}
 .project-cloudide {
     background: url(../images/projects/cloud-ide.PNG) center / cover no-repeat;
     -webkit-background-clip: text;
